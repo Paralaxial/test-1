@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html {
+    @apply font-plex-sans;
+  }
+  body {
+    @apply md:w-3/4 m-auto bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-50;
+  }
+  .content {
+    @apply m-6;
+  }
+  .heading {
+    @apply text-4xl font-medium my-1;
+  }
+}
