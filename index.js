@@ -3,6 +3,7 @@ const app = express();
 const path = 'src/main'
 
 app.get('/', (req, response) => {
+  response.send("Dev mode");
   response.sendFile('/index.html', { root: path });
 });
 
